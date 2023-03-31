@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador Heraz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="prefers-color-scheme: dark" href="css/dark.css">
+    <link rel="stylesheet" media="prefers-color-scheme: light" href="css/light.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 </head>
 <body>
-    <header>
-        <img class="logo" src="img/Logo.png" alt="logo de alura">
-    </header>
+    <nav>
+        <img class="logo" src="img/Logo.png" alt="Logo de Alura">
+        <dark-mode-toggle class="modo"
+        id="dark-mode-toggle-1"
+        appearance="switch"
+        dark="Dark"
+        light="Light"
+      ></dark-mode-toggle>
+    </nav>
     <main>
         <section class="contenedor">
             <section>
@@ -28,7 +37,7 @@
             </section>
             <section>
                 <div>
-                    <textarea cols="20" rows="10" class="mensaje"></textarea>
+                    <textarea cols="20" rows="10" class="mensaje" placeholder="Ningun mensaje encotrado"></textarea>
                     <button class="copiar" onclick="copiarMensaje()">Copiar</button>
                 </div>
             </section>
@@ -44,14 +53,13 @@
           <div class="social">
             <h3>Sígueme en</h3>
             <ul>
-              <li><a href="https://www.linkedin.com/in/manuelheraz/">Facebook</a></li>
-              <li><a href="https://www.facebook.com/manuel.hernandezdiaz.773/">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/manuelheraz/">linkedin</a></li>
             </ul>
           </div>
         </div>
       </footer>
       
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

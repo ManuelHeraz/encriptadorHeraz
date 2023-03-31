@@ -1,15 +1,38 @@
 *{
-    background-color: #222;
-    font-family: 'Inter';
+  background-color: var(--background-color);
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
 }
 
-.logo{
-    padding-top: 2%;
-    margin-left: 2%;
-    width: 10%;
+:root{
+  color-scheme: light dark;
+}
+
+.modo{
+  background: none;
+}
+
+nav {
+  background: gray;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+
+nav .logo {
+  background: none;
 }
 
 main{
@@ -45,7 +68,6 @@ main{
     margin-top: 2%;
     padding-left: 2%;
     position: relative;
-    z-index: 1;
 }
     
 
@@ -91,7 +113,6 @@ main{
     margin-left: 2%;
     position: absolute;
     width: 336px;
-    z-index: 2;
 }
 
 .informacion{
@@ -103,6 +124,7 @@ main{
 footer {
 
     color: #fff;
+    background-color: gray;
     font-family: 'Inter', sans-serif;
     padding: 20px 0;
     position: relative;
@@ -111,7 +133,7 @@ footer {
   }
   
   .container {
-
+    background-color: gray;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -120,39 +142,47 @@ footer {
   }
   
   .about {
+    background-color: gray;
     width: 50%;
     margin-bottom: 20px;
   }
   
   .about h3 {
+    background: none;
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
   .about p {
+    background: none;
     font-size: 1rem;
   }
   
   .social {
+    background: none;
     width: 30%;
     margin-bottom: 20px;
   }
   
   .social h3 {
+    background: none;
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
   .social ul {
+    background: none;
     list-style: none;
     padding: 0;
   }
   
   .social li {
+    background: none;
     margin-bottom: 10px;
   }
   
   .social a {
+    background: none;
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
@@ -208,7 +238,6 @@ footer {
 
   @media screen and (max-width: 375px) {
     *{
-        background-color: #222;
         font-family: 'Inter';
         font-weight: 400;
         font-size: 40px;
