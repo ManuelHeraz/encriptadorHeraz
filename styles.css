@@ -1,0 +1,227 @@
+*{
+    background-color: #222;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 2%;
+    margin-left: 2%;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.textarea{
+    border: none;
+    color: #c0c0c0;
+    margin-top: 1%;
+    text-transform: lowercase;
+}
+::placeholder{color: #888;}
+    .text-area:focus{
+        outline: none;
+    }
+
+.mensaje{
+    background: #c0c0c0;
+    background-image: url("img/laptop-fondo.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 24px;
+    color: #021327;
+    margin-left: 9%;
+    margin-top: 2%;
+    padding-left: 2%;
+    position: relative;
+    z-index: 1;
+}
+    
+
+.menasje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 5%;
+}
+
+.btn-desencriptar {
+    background-color: #23236d;
+    border: 1px solid #222;
+    border-radius: 24px;
+    color: #d4d4d4;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 6%;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #89898a;
+    border: 1px solid #222;
+    border-radius: 24px;
+    color: #292929;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 6%;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar {
+    border: 1px solid #818181;
+    border-radius: 24px;
+    color: #818181;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 2%;
+    position: absolute;
+    width: 336px;
+    z-index: 2;
+}
+
+.informacion{
+    color: #d4d4d4;
+    font-size: 18px;
+}
+
+
+footer {
+
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1rem;
+  }
+  
+  .social {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social li {
+    margin-bottom: 10px;
+  }
+  
+  .social a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .social a:hover {
+    text-decoration: underline;
+  }
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .textarea,
+    .mensaje {
+      width: 100%;
+      margin: 0 10px;
+      position: relative;
+    }
+    .copiar{
+        position:absolute;
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+    .container {
+        flex-direction: column;
+      }
+    
+      .about,
+      .social {
+        width: 100%;
+      }
+    
+      .social {
+        margin-top: 20px;
+      }
+    }
+    
+    @media screen and (max-width: 375px) {
+      .about h3,
+      .social h3 {
+        font-size: 1.2rem;
+      }
+    
+      .about p,
+      .social a {
+        font-size: 0.9rem;
+      }
+}
+  
+
+  @media screen and (max-width: 375px) {
+    *{
+        background-color: #222;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 150%;
+    }
+    .botones{
+        flex-direction: column;
+        margin: auto;
+    }
+    .copiar{
+        margin-left: 2%;
+        margin-top: 0%;
+    }
+}
+  
+  
